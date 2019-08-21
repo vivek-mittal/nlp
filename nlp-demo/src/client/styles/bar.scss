@@ -1,0 +1,72 @@
+.bar {
+	background-color: rgb(136, 12, 99);
+    height: 60px;
+}
+
+#top_bar {
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+    margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	position: fixed;
+	top: 10px;
+	width: 100%;
+}
+
+
+.search_button {
+	height: 30px;
+	width: 30px;
+	margin: 15px;
+	background-color: rgb(136, 12, 99);
+	background: transparent;
+	border-color: rgb(136, 12, 99);
+	border-style: rgb(136, 12, 99);
+}
+
+.search_image {
+	height: 30px;
+	width: 30px;
+	margin-left: -10px
+}
+
+.blog_title {
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.subscribe_button {
+	padding-left: 10px;
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#bottom_bar {
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	display: grid;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+.creater_message {
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.copyright_notice {
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}

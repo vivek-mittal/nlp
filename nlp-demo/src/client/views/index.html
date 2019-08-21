@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Analyse text</title>
+    </head>
+    <body>
+        <main class="main_body">
+            <div class="bar" id="top_bar">
+                <p class="subscribe_button">Subscribe</p>
+                <p class="blog_title">Above & Beyond</p>
+                <button class="search_button">
+                    <img class="search_image" src="../images/search_icon.png"/>
+                </button>
+            </div>
+			<header class="blog_intro">
+                <h3 class="blog_summary">Evaluate a news article with Natural Language Processing</h3>
+                <p class="blog_subtitle">Please enter text or a URL to analyse</p>
+            </header>
+            <form class="input_form" action="index.html" method="post" onsubmit="return Client.handleSubmit(event)">
+                <div class="form_container">
+                    <input type="text" name="input" value="" id="textbox" placeholder="Enter text or a URL">
+                    <input type="submit" name="" value="Analyse" id="submit_button" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </div>
+            </form>
+
+            <section id="original_text_box" class="output_box">
+                    <h2>Original Text</h2>
+                    <div id="original_text" class="wrap_around_data"></div>
+            </section>
+            <section id="results_sentiment" class="output_box">
+                <h2>Sentiment</h2>
+                <div id="polarity"></div>
+                <div id="polarity_conf"></div>
+                <div id="subjectivity"></div>
+                <div id="subjectivity_conf"></div>
+            </section>
+            <section id="results_classify" class="output_box">
+                    <h2>Classification</h2>
+                    <div id="classify_text" class="wrap_around_data"></div>
+            </section>
+            <section id="results_elsa" class="output_box">
+                    <h2>Entity level Sentiment analysis</h2>
+                    <div id="elsa_text" class="wrap_around_data"></div>
+            </section>
+            <section id="results_entities" class="output_box">
+                    <h2>Entities</h2>
+                    <div id="keywords" class="wrap_around_data"></div>
+            </section>
+            <section id="results_concepts" class="output_box">
+                    <h2>Concepts</h2>
+                    <div id="concepts_text" class="wrap_around_data"></div>
+            </section>
+            <section id="results_summarize" class="output_box">
+                    <h2>Summary</h2>
+                    <div id="summary" class="wrap_around_data"></div>
+            </section>
+            <section id="results_language" class="output_box">
+                <h2>Language</h2>
+                <div id="langauge"></div>
+                <div id="langauge_conf"></div>
+            </section>
+            </main>
+        <footer>
+            <p>This is a scooter</p>
+        </footer>
+        <div class="bar" id="bottom_bar">
+				<p class="creater_message">Made with ❤️ by Vivek. ©️ 2019. License - MIT</p>
+		</div>
+    </body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js');
+        }
+    </script>
+</html>
